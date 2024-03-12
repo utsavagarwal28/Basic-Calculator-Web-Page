@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <script src="js/main.js"></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="Main-Container">
+        <div class="Container-Calculator">
+            <div class="Calc-Screen">
+                <div class="inp-text" id="text1"> </div>
+                <div class="inp-text" id="text2"> </div>
+                <div class="inp-text" id="text3"> </div>
+                <div id="text4"> </div>
+            </div>
+            <!-- <input type="text" id="result"> -->
+            <div class="Calc-Btn">
+                <div class="row1 btn-row">
+                    <button onclick="clrScr()" class= "btn-ovel" type="reset">C</button>
+                    <button onclick="getOpr('%')" class= "btn-rnd btn-symb" type="button">%</button>
+                    <button onclick="getOpr('/')" class= "btn-rnd btn-symb" type="button">/</button>
+                </div>
+                <div class="row2 btn-row">
+                    <button onclick="getNum('7')" class= "btn-rnd btn-num" type="button">7</button>
+                    <button onclick="getNum('8')" class= "btn-rnd btn-num" type="button">8</button>
+                    <button onclick="getNum('9')" class= "btn-rnd btn-num" type="button">9</button>
+                    <button onclick="getOpr('x')" class= "btn-rnd btn-symb" type="button">x</button>
+                </div>
+                <div class="row3 btn-row">
+                    <button onclick="getNum('4')" class= "btn-rnd btn-num" type="button">4</button>
+                    <button onclick="getNum('5')" class= "btn-rnd btn-num" type="button">5</button>
+                    <button onclick="getNum('6')" class= "btn-rnd btn-num" type="button">6</button>
+                    <button onclick="getOpr('+')" class= "btn-rnd btn-symb" type="button">+</button>
+                    
+                </div>
+                <div class="row4 btn-row">
+                    <button onclick="getNum('1')" class= "btn-rnd btn-num" type="button">1</button>
+                    <button onclick="getNum('2')" class= "btn-rnd btn-num" type="button">2</button>
+                    <button onclick="getNum('3')" class= "btn-rnd btn-num" type="button">3</button>
+                    <button onclick="getOpr('-')" class= "btn-rnd btn-symb" type="button">-</button>
+                    
+                </div>
+                <div class="row5 btn-row">
+                    <button onclick="getNum('.')" class= "btn-rnd btn-num" type="button">.</button>
+                    <button onclick="getNum('0')" class= "btn-rnd btn-num" type="button">0</button>
+                    <button onclick="solve()" class= "btn-ovel btn-symb" type="submit">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
